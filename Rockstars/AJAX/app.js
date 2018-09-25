@@ -1,11 +1,10 @@
 //Create Event Listener
 
-button = document.getElementById("button");
-button.addEventListener("click", buttonEventHandler);
+document.getElementById("button").addEventListener("click", loadData);
 
 
-function buttonEventHandler(e) {
-    console.log(e.type);
+function loadData(e) {
+    //console.log(e.type);
 
     //Create Object XHR
     const xhr = new XMLHttpRequest();
@@ -16,10 +15,7 @@ function buttonEventHandler(e) {
 
     xhr.onload = function() {
         if (this.status === 200) {
-        document.getElementById("output").innerHTML = `<h1>${
-            this.responseText
-        }</h1>`;
-
+            console.log(this.responseText);
         }
     };
 

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" href="chuck.css">
+    <style type="text/css">
+    #topright{
+        position: absolute;
+        right: -19px;
+        top: 54px;
+        display: block;
+        height: 190px;
+        width: 344px;
+        background: url(https://media.giphy.com/media/wQvFuXLMOtw8o/giphy.gif) no-repeat;
+        text-indent: -999em;
+        text-decoration: none;
+    }
+
+    #topleft{
+        position: absolute;
+        left: -19px;
+        top: 54px;
+        display: block;
+        height: 190px;
+        width: 344px;
+        background: url(http://www.comedycentral.co.uk/sites/default/files/styles/image-w-900-scale/public/cc_uk/galleries/large/2015/03/10/walk.gif?itok=-zQCrdWr) no-repeat;
+        text-indent: -999em;
+        text-decoration: none;
+    }
+    </style>
+    <a id="topright" href="#" title="TopRight">Top Right Link Text</a>
+    <a id="topleft" href="#" title="TopLeft">Top Right Link Text</a>
+    <title>Document</title>
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h2>Chuck Norris Joke Generator</h2>
+            <form>
+                <div>
+                    <label for="number">Number of Jokes</label>
+                    <input align="left" type="number" id="number">
+                    <label for="name">Personalized Joke</label>
+                    <input align="right" type="text" id="first-name">
+                </div>
+                <div>
+                    <button id="get-jokes" class="button1">Get Chuck Norris Jokes</button>
+                    <button id="get-jokes" class="button2">Get Your Jokes</button>
+                </div>
+                <div class="row">
+                    <ul class='jokes'></ul>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div style="position:sticky"><img src="chuck.jpg" align="right" width="300" height="1500"><img src="timeline-05.jpg" align="left" width="300" height="1500"></div>
+    
+    
+
+    <script src="app.js"></script>
+    
+</body>
+</html>
